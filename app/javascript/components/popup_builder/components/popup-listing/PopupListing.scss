@@ -1,0 +1,15 @@
+.cc-custom-popup-listing-container {
+  .cc-custom-popup-listing {
+    .cc-custom-popup-listing__views {
+      font-style: italic;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .Polaris-Layout__Section--secondary {
+    @media(min-width: 819px) {
+      border-left: 1px solid #dfe3e8;
+      padding-left: 1.5em;
+    }
+  }
+}

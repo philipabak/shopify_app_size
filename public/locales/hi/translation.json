@@ -1,0 +1,13 @@
+{
+    "Why upgrade?": " क्यों अपग्रेड करना?",
+    "bytes": " बाइट्स",
+    "File type must be .csv": " फाइल प्रकार को .csv होना चाहिए।",
+    "Import\/Export": " आयात \/ निर्यात",
+    "Bulk Update Size Charts": " बल्क अपडेट आकार चार्ट",
+    "Export, modify, and update chart settings in bulk.": " बल्क में निर्यात, संशोधित और चार्ट सेटिंग्स अपडेट करें।",
+    "Export CSV": " CSV निर्यात करें",
+    "Export a list of size chart settings in CSV format. This CSV can be edited in a spreadsheet editor like Excel, Numbers, or Google Sheets.": " एक आकार चार्ट सेटिंग्स की एक सूची को CSV प्रारूप में निर्यात करें। यह CSV एक स्प्रीडशीट संपादक जैसे एक्सेल, नंबर्स या गूगल शीट में संपादित किया जा सकता है।",
+    "Import Size Chart Settings": " आयात आकार चार्ट सेटिंग्स",
+    "Import CSV": " CSV आयात करें",
+    "Import a modified CSV to bulk update size chart settings.": " CSV को संशोधित रूप से बल्क अपडेट साइज चार्ट सेटिंग्स आयात करें।"
+}

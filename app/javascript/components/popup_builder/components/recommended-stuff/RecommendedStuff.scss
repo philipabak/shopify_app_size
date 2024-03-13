@@ -1,0 +1,78 @@
+.cc-recommended-stuff {
+  $small-breakpoint: 819px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @media(min-width: $small-breakpoint) {
+    flex-direction: column !important;
+  }
+
+  .cc-recommended-stuff__card {
+    text-decoration: none;
+    color: #000000;
+    width: 24%;
+
+    @media(min-width: $small-breakpoint){
+      width: 100% !important;
+    }
+
+    .Polaris-Card {
+      flex-grow: 0;
+      margin-top: 0;
+
+      @media(min-width: $small-breakpoint){
+        margin-bottom: 1em;
+      }
+
+      .Polaris-TextStyle--variationStrong {
+        margin-bottom: 0.5em;
+        display: block;
+      }
+    }
+
+    &--app {
+      .Polaris-Card {
+        .Polaris-Thumbnail {
+          margin-right: 1em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    &--theme {
+      .Polaris-Card {
+        .Polaris-Thumbnail {
+          width: 100%;
+          margin-bottom: 1em;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+      }
+    }
+  }
+
+  &--has-1 {
+    .cc-recommended-stuff__card {
+      width: 45%;
+    }
+  }
+
+  &--has-2 {
+    .cc-recommended-stuff__card {
+      width: 48%;
+    }
+  }
+
+  &--has-3 {
+    .cc-recommended-stuff__card {
+      width: 32%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.ccpops-popup-builder-container {
+  opacity: 0;
+  transition: opacity .3s;
+  visibility: hidden;
+  point-events: none;
+
+  &.ccpops-popup-builder-container--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ccpops-veil {
+    display: block !important;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .ccpops-popup {
+    //Scale down the preview if its builder (as the browser is not full width)
+    .ccpops-popup--has-popup-size-small.ccpops-popup--has-position-right &,
+    .ccpops-popup--has-popup-size-small.ccpops-popup--has-position-central & {
+      @media(min-width: 768px) and (max-width: 1200px) {
+        font-size: 10px;
+        width: 300px;
+      }
+    }
+
+    .ccpops-popup--has-popup-size-medium.ccpops-popup--has-position-right &,
+    .ccpops-popup--has-popup-size-medium.ccpops-popup--has-position-central & {
+      @media(min-width: 768px) and (max-width: 1200px) {
+        font-size: 13px;
+        width: 350px;
+      }
+    }
+
+    .ccpops-popup--has-popup-size-large.ccpops-popup--has-position-right &,
+    .ccpops-popup--has-popup-size-large.ccpops-popup--has-position-central & {
+      @media(min-width: 768px) and (max-width: 1309px) {
+        font-size: 13px;
+        width: 400px;
+      }
+
+      @media(min-width: 1310px) and (max-width: 1440px) {
+        font-size: 14px;
+        width: 600px;
+      }
+    }
+  }
+}

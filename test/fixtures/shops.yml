@@ -1,0 +1,3 @@
+regular_shop:
+  shopify_domain: 'shop.myshopify.com'
+  shopify_token: '1234'

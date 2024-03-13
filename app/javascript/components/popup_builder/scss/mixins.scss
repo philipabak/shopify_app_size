@@ -1,0 +1,29 @@
+@function breakpoint($breakpoint) {
+  @if map_has_key($breakpoints, $breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
+  } @else {
+    @warn "#{$breakpoint} does not exist";
+    @return null;
+  }
+}
+
+@mixin xlg {
+  @media (min-width: breakpoint('xlg')) { @content; }
+}
+
+@mixin lg {
+  @media (min-width: breakpoint('lg')) { @content; }
+}
+
+@mixin md {
+  @media (min-width: breakpoint('md')) { @content; }
+}
+
+@mixin sm {
+  @media (min-width: breakpoint('sm')) { @content; }
+}
+
+//Try not to use this, everything should be mobile first
+@mixin xs {
+  @media (max-width: breakpoint('xs')) { @content; }
+}

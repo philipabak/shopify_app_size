@@ -1,0 +1,18 @@
+.cc-announcement-banner {
+  transition: max-height 1s;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+
+  &--in {
+    max-height: 1000px;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .Polaris-Banner{
+    border: 1px solid #bae6e6;
+  }
+}

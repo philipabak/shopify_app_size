@@ -1,0 +1,18 @@
+<% content_for :javascript do %>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "g0y39z5sli");
+</script>
+
+<% end %>
+
+<%= react_component "popup_builder/PopupApp", {
+    plan: @has_premium_access ? 'paid' : 'free',
+    app_installed_at: @local_shop.created_at,
+    free_tier_chart_count_max: ENV['FREE_TIER_CHART_COUNT_MAX'],
+    tags: @tags
+  } %>
+

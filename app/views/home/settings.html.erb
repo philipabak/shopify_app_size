@@ -1,0 +1,8 @@
+<%= react_component "popup_builder/Settings" , {
+  shop_settings: @shop_settings,
+  plan: @has_premium_access ? 'paid' : 'free',
+  app_installed_at: @local_shop.created_at,
+  free_tier_chart_count_max: ENV['FREE_TIER_CHART_COUNT_MAX'],
+  tags: @tags
+} %>
+

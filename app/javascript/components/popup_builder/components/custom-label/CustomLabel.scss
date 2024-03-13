@@ -1,0 +1,19 @@
+.cc-custom-label {
+  padding: 1.5em 0 0.3em;
+
+  &.cc-custom-label--spacing-tight {
+    padding-top: 0;
+  }
+
+  &.cc-custom-label--spacing-loose {
+    padding-top: 3em;
+  }
+
+  a.Polaris-Link {
+    float: right;
+  }
+
+  button.Polaris-Link {
+    padding-left: 8px;
+  }
+}

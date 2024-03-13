@@ -1,0 +1,24 @@
+<%= react_component "popup_builder/instances/size-chart/SizeChartPopupRenderer",
+  {
+    state: @state_store,
+    plan: @has_premium_access ? 'paid' : 'free',
+    shop_settings: @shop_settings
+  },
+  prerender: true
+%>
+<%= react_component "popup_builder/instances/size-chart/SizeChartTriggerRenderer",
+  {
+    state: @state_store,
+    plan: @has_premium_access ? 'paid' : 'free',
+    shop_settings: @shop_settings
+  },
+  prerender: true
+%>
+<%= react_component "popup_builder/instances/size-chart/SizeChartInlineRenderer",
+  {
+    state: @state_store,
+    plan: @has_premium_access ? 'paid' : 'free',
+    shop_settings: @shop_settings
+  },
+  prerender: true
+%>

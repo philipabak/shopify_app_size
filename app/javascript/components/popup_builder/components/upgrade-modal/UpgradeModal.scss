@@ -1,0 +1,23 @@
+.cc-upgrade-modal {
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+
+      &:before {
+        content: '✓';
+        padding-right: 5px;
+        font-size: 22px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+
+  ol {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

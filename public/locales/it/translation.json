@@ -1,0 +1,13 @@
+{
+    "Why upgrade?": " Perché aggiornare?",
+    "bytes": " byte",
+    "File type must be .csv": " Il tipo di file deve essere .csv",
+    "Import\/Export": " Importazione\/Esportazione",
+    "Bulk Update Size Charts": " Aggiornamento di massa delle tabelle delle taglie",
+    "Export, modify, and update chart settings in bulk.": " Esportare, modificare e aggiornare le impostazioni del grafico in blocco.",
+    "Export CSV": " Esporta CSV",
+    "Export a list of size chart settings in CSV format. This CSV can be edited in a spreadsheet editor like Excel, Numbers, or Google Sheets.": " Esporta un elenco di impostazioni di tabella delle taglie in formato CSV. Questo CSV può essere modificato in un editor di fogli di calcolo come Excel, Numbers o Google Sheets.",
+    "Import Size Chart Settings": " Importa impostazioni tabella delle taglie",
+    "Import CSV": " Importa CSV",
+    "Import a modified CSV to bulk update size chart settings.": " Importa un CSV modificato per aggiornare in blocco le impostazioni della tabella delle taglie."
+}

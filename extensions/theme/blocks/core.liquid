@@ -1,0 +1,41 @@
+
+{%- comment -%}Start of Clean Canvas Size Chart App code{%- endcomment -%}
+{% if product %}
+  <script>
+    console.log("CSC core enabled.");
+    ccPops = window.ccPops || {};
+    ccPops.sizeChart = ccPops.sizeChart || {};
+    ccPops.sizeChart.collections = {{ product.collections | map: 'id' | json }};
+    ccPops.sizeChart.tags = {{ product.tags | json }};
+    ccPops.sizeChart.vendors = {{ product.vendor | json }};
+    ccPops.sizeChart.myTypes = {{ product.type | json }};
+  </script>
+
+{% if app.metafields.script.location != blank %}
+  <script>
+    function asyncLoad() {
+      let url = "{{ app.metafields.script.location }}";
+      let script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = url;
+      var elem = document.getElementsByTagName('script')[0];
+      elem.parentNode.insertBefore(script, elem);
+    };
+    if(window.attachEvent) {
+      window.attachEvent('onload', asyncLoad);
+    } else {
+      window.addEventListener('load', asyncLoad, false);
+    }
+  </script>
+{% endif %}
+{% endif %}
+{%- comment -%}End of Clean Canvas Size Chart App code{%- endcomment -%}
+
+{% schema %}
+{
+  "name": "Size Chart",
+  "target": "body",
+  "available_if": "{{ app.metafields.conditional.core }}"
+}
+{% endschema %}

@@ -1,0 +1,35 @@
+//This should only show in builder, and is purely for previewing
+.ccpops-trigger-builder-container {
+  transition: background-color .5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  pointer-events: none;
+
+  &.ccpops-trigger-builder-container--on-top {
+    z-index: 10;
+  }
+
+  .ccpops-trigger-container  {
+    top: 50%;
+    position: absolute !important;
+    z-index: auto;
+
+    &.ccpops-trigger--has-link-type-inlinechart {
+      display: none !important;
+    }
+
+    &.ccpops-trigger--has-link-type-inline{
+      right: 0;
+
+
+
+      .ccpops-trigger {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}

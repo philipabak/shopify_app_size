@@ -1,0 +1,44 @@
+good_size_chart:
+  shop: regular_shop
+  name: Good size chart
+  status: draft
+  state_store:
+    settings:
+      position: '1'
+      overlayColor: '#333'
+      backgroundColor: '#fff'
+  link_impressions: 1000
+  link_clicks: 2000
+Size chart 1:
+  shop: regular_shop
+  name: Size chart 1
+  status: published
+  state_store: { foo: 'bar' }
+  created_at: <%= 3.days.ago %>
+  link_impressions: 1000
+  link_clicks: 2000
+Size chart 2:
+  shop: regular_shop
+  name: Size chart 2
+  status: published
+  state_store: { foo: 'bar' }
+  created_at: <%= 1.day.ago %>
+  link_impressions: 1000
+  link_clicks: 2000
+Size chart 3:
+  shop: regular_shop
+  name: Size chart 3
+  status: published
+  state_store: { foo: 'bar' }
+  created_at: <%= 2.days.ago %>
+  link_impressions: 1000
+  link_clicks: 2000
+Size chart API attribute test:
+  shop: regular_shop
+  name: Size chart for API test
+  status: draft
+  state_store: { foo: 'bar', nested: { far: 'boo' } }
+  created_at: <%= Time.parse('1985-01-21 12:34').to_s(:db) %>
+  updated_at: <%= Time.parse('1985-01-22 01:23').to_s(:db) %>
+  link_impressions: 1000
+  link_clicks: 2000

@@ -1,0 +1,52 @@
+.cc-custom-banner {
+  transition: max-height .5s;
+  max-height: 0;
+  overflow: hidden;
+
+  &--in {
+    max-height: 250px;
+  }
+
+  .Polaris-Banner {
+    .Polaris-Banner__Content {
+      margin-top: 5px;
+    }
+  }
+
+  &.cc-custom-banner--emoji {
+    &.cc-custom-banner--in {
+      max-height: 200px;
+    }
+
+    .cc-custom-banner__emoji-ratings {
+      display: flex;
+
+      > div {
+        display: flex;
+      }
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      .cc-custom-banner__emoji-ratings__rating {
+        width: 20%;
+        padding: 10px;
+        transition: padding .2s;
+        cursor: pointer;
+
+        &:hover {
+          padding: 5px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .star-ratings {
+    padding-top: 1em;
+  }
+}
